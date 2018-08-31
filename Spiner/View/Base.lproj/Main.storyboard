@@ -57,17 +57,26 @@
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <action selector="drawWeightTextFieldChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="GKD-Pz-c5Q"/>
+                                                </connections>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Draw Length (in)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7FZ-5K-esZ">
                                                 <rect key="frame" x="0.0" y="327.5" width="288" height="30"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <action selector="drawLengthTextFieldChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="gEw-k5-u9o"/>
+                                                </connections>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vnj-CU-D9W">
                                                 <rect key="frame" x="80" y="373.5" width="128" height="50"/>
                                                 <inset key="contentEdgeInsets" minX="32" minY="16" maxX="32" maxY="16"/>
                                                 <state key="normal" title="Calculate"/>
+                                                <connections>
+                                                    <action selector="calculateButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="juh-hy-gf3"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -95,6 +104,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="calculateButton" destination="vnj-CU-D9W" id="C1o-Lf-Ucq"/>
+                        <outlet property="drawLengthTextField" destination="7FZ-5K-esZ" id="uR2-EU-2QW"/>
+                        <outlet property="drawWeightTextField" destination="fbb-Y0-6GX" id="SuR-Mg-04D"/>
+                        <outlet property="materialSelectorControl" destination="XCH-oO-nq6" id="CDi-H8-Gly"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

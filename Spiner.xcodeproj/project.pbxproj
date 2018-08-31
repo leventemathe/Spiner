@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D714842521395EBC00890A9F /* SpineInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = D714842421395EBC00890A9F /* SpineInput.swift */; };
+		D714842721395EE000890A9F /* ArrowMaterial.swift in Sources */ = {isa = PBXBuildFile; fileRef = D714842621395EE000890A9F /* ArrowMaterial.swift */; };
 		D7C96C4D2136E7B90019FBC0 /* WoodenArrowSpineCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C96C4C2136E7B90019FBC0 /* WoodenArrowSpineCalculatorTests.swift */; };
 		D7CB263221394549004D71BD /* Amatic-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D7CB263121394549004D71BD /* Amatic-Bold.ttf */; };
 		D7CB263421394549004D71BD /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7CB263321394549004D71BD /* Colors.swift */; };
@@ -67,6 +69,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		D714842421395EBC00890A9F /* SpineInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpineInput.swift; sourceTree = "<group>"; };
+		D714842621395EE000890A9F /* ArrowMaterial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrowMaterial.swift; sourceTree = "<group>"; };
 		D7C96C4C2136E7B90019FBC0 /* WoodenArrowSpineCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WoodenArrowSpineCalculatorTests.swift; sourceTree = "<group>"; };
 		D7CB263121394549004D71BD /* Amatic-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Amatic-Bold.ttf"; sourceTree = "<group>"; };
 		D7CB263321394549004D71BD /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
@@ -118,6 +122,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D714842221395E8800890A9F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D714842321395E9A00890A9F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D714842621395EE000890A9F /* ArrowMaterial.swift */,
+				D714842421395EBC00890A9F /* SpineInput.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D7148428213962F200890A9F /* UIElements */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UIElements;
+			sourceTree = "<group>";
+		};
 		D7FA7B082136CCD400DD6EDC = {
 			isa = PBXGroup;
 			children = (
@@ -141,6 +168,8 @@
 		D7FA7B132136CCD400DD6EDC /* Spiner */ = {
 			isa = PBXGroup;
 			children = (
+				D714842321395E9A00890A9F /* Model */,
+				D714842221395E8800890A9F /* ViewModel */,
 				D7FA7B282136CD1600DD6EDC /* View */,
 				D7FA7B272136CD0800DD6EDC /* Supporting Files */,
 				D7FA7B262136CCFE00DD6EDC /* Assets */,
@@ -171,6 +200,7 @@
 		D7FA7B282136CD1600DD6EDC /* View */ = {
 			isa = PBXGroup;
 			children = (
+				D7148428213962F200890A9F /* UIElements */,
 				D7FA7B162136CCD400DD6EDC /* StatSelectorVC.swift */,
 				D7FA7B182136CCD500DD6EDC /* Main.storyboard */,
 				D7FA7B1D2136CCD800DD6EDC /* LaunchScreen.storyboard */,
@@ -349,7 +379,9 @@
 			files = (
 				D7FA7B172136CCD400DD6EDC /* StatSelectorVC.swift in Sources */,
 				D7CB263421394549004D71BD /* Colors.swift in Sources */,
+				D714842721395EE000890A9F /* ArrowMaterial.swift in Sources */,
 				D7FA7B152136CCD400DD6EDC /* AppDelegate.swift in Sources */,
+				D714842521395EBC00890A9F /* SpineInput.swift in Sources */,
 				D7CB26362139489F004D71BD /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
