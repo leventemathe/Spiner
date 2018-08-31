@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		D7C96C4D2136E7B90019FBC0 /* WoodenArrowSpineCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C96C4C2136E7B90019FBC0 /* WoodenArrowSpineCalculatorTests.swift */; };
 		D7CB263221394549004D71BD /* Amatic-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D7CB263121394549004D71BD /* Amatic-Bold.ttf */; };
-		D7CB263421394549004D71BD /* MyColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7CB263321394549004D71BD /* MyColors.swift */; };
+		D7CB263421394549004D71BD /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7CB263321394549004D71BD /* Colors.swift */; };
 		D7CB26362139489F004D71BD /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7CB26352139489F004D71BD /* Extensions.swift */; };
 		D7CB263821394ED8004D71BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7CB263721394ED8004D71BD /* Assets.xcassets */; };
 		D7FA7B152136CCD400DD6EDC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7FA7B142136CCD400DD6EDC /* AppDelegate.swift */; };
@@ -69,7 +69,7 @@
 /* Begin PBXFileReference section */
 		D7C96C4C2136E7B90019FBC0 /* WoodenArrowSpineCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WoodenArrowSpineCalculatorTests.swift; sourceTree = "<group>"; };
 		D7CB263121394549004D71BD /* Amatic-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Amatic-Bold.ttf"; sourceTree = "<group>"; };
-		D7CB263321394549004D71BD /* MyColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyColors.swift; sourceTree = "<group>"; };
+		D7CB263321394549004D71BD /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		D7CB26352139489F004D71BD /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		D7CB263721394ED8004D71BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D7FA7B112136CCD400DD6EDC /* Spiner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spiner.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -153,7 +153,7 @@
 			children = (
 				D7CB263721394ED8004D71BD /* Assets.xcassets */,
 				D7CB263121394549004D71BD /* Amatic-Bold.ttf */,
-				D7CB263321394549004D71BD /* MyColors.swift */,
+				D7CB263321394549004D71BD /* Colors.swift */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
@@ -348,7 +348,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D7FA7B172136CCD400DD6EDC /* StatSelectorVC.swift in Sources */,
-				D7CB263421394549004D71BD /* MyColors.swift in Sources */,
+				D7CB263421394549004D71BD /* Colors.swift in Sources */,
 				D7FA7B152136CCD400DD6EDC /* AppDelegate.swift in Sources */,
 				D7CB26362139489F004D71BD /* Extensions.swift in Sources */,
 			);
