@@ -58,10 +58,18 @@ class StatSelectorVC: UIViewController {
     var theme: Theme = DefaultTheme()
     
     private func applyTheme() {
+        applyThemeToSelf(theme)
         materialSelectorControl.applyTheme(theme)
         drawLengthTextField.applyTheme(theme, withPlaceholderText: drawLengthTextField.placeholder!)
         drawWeightTextField.applyTheme(theme, withPlaceholderText: drawWeightTextField.placeholder!)
         calculateButton.applyTheme(theme)
+    }
+    
+    private func applyThemeToSelf(_ theme: Theme) {
+        let gradient = CAGradientLayer()
+        gradient.frame = view.bounds
+        gradient.colors = [theme.colors.backgroundDark.cgColor, theme.colors.backgroundLight.cgColor]
+        view.layer.insertSublayer(gradient, at: 0)
     }
 }
 
