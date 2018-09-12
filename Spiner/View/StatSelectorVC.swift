@@ -10,9 +10,9 @@ import UIKit
 
 class StatSelectorVC: UIViewController {
 
-    @IBOutlet weak var materialSelectorControl: UISegmentedControl!
-    @IBOutlet weak var drawWeightTextField: UITextField!
-    @IBOutlet weak var drawLengthTextField: UITextField!
+    @IBOutlet weak var materialSelectorControl: SpinerSegmentedControl!
+    @IBOutlet weak var drawWeightTextField: SpinerTextField!
+    @IBOutlet weak var drawLengthTextField: SpinerTextField!
     @IBOutlet weak var calculateButton: UIButton!
 
     @IBAction func drawWeightTextFieldChanged(_ sender: UITextField) {
@@ -32,6 +32,7 @@ class StatSelectorVC: UIViewController {
         }
     }
     
+    // TODO: Make sure only numbers can be typed in
     @IBAction func calculateButtonPressed(_ sender: UIButton) {
         let drawWeight = Double(drawWeightTextField.text!)!
         let drawLength = Double(drawLengthTextField.text!)!
@@ -49,7 +50,17 @@ class StatSelectorVC: UIViewController {
     
     override func viewDidLoad() {
         calculateButton.isEnabled = false
+        applyTheme()
         super.viewDidLoad()
+    }
+    
+    // TODO: inject this
+    var theme: Theme = DefaultTheme()
+    
+    private func applyTheme() {
+        materialSelectorControl.applyTheme(theme)
+        drawLengthTextField.applyTheme(theme, withPlaceholderText: drawLengthTextField.placeholder!)
+        drawWeightTextField.applyTheme(theme, withPlaceholderText: drawWeightTextField.placeholder!)
     }
 }
 

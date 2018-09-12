@@ -8,9 +8,14 @@
 
 import UIKit
 
+protocol Colors {
+    
+    var backgroundDark: UIColor { get }
+    var backgroundLight: UIColor { get }
+    var tint: UIColor { get }
+}
 
-
-struct MyColors {
+struct DefaultColors: Colors {
     
     let backgroundDark = UIColor(hex: 0x2DD16C)
     let backgroundLight = UIColor(hex: 0x83FFAB)

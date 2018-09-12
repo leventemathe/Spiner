@@ -33,12 +33,12 @@ extension UIColor {
 
 private struct MyColorsContainer {
     
-    static let myColors = MyColors()
+    static let myColors = DefaultColors()
 }
 
 extension UIColor {
     
-    static var myColors: MyColors {
+    static var myColors: DefaultColors {
         return MyColorsContainer.myColors
     }
 }

@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		D714842521395EBC00890A9F /* SpineInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = D714842421395EBC00890A9F /* SpineInput.swift */; };
 		D714842721395EE000890A9F /* ArrowMaterial.swift in Sources */ = {isa = PBXBuildFile; fileRef = D714842621395EE000890A9F /* ArrowMaterial.swift */; };
+		D714842A2139773200890A9F /* SpinerSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = D71484292139773200890A9F /* SpinerSegmentedControl.swift */; };
+		D714842C2139783800890A9F /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = D714842B2139783800890A9F /* Fonts.swift */; };
+		D714842F2139794300890A9F /* Lato-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D714842D2139794300890A9F /* Lato-Bold.ttf */; };
+		D71484302139794300890A9F /* Lato-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D714842E2139794300890A9F /* Lato-Light.ttf */; };
+		D7148432213979C800890A9F /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7148431213979C800890A9F /* Theme.swift */; };
+		D714843421397B6A00890A9F /* SpinerTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D714843321397B6A00890A9F /* SpinerTextField.swift */; };
 		D7C96C4D2136E7B90019FBC0 /* WoodenArrowSpineCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C96C4C2136E7B90019FBC0 /* WoodenArrowSpineCalculatorTests.swift */; };
 		D7CB263221394549004D71BD /* Amatic-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D7CB263121394549004D71BD /* Amatic-Bold.ttf */; };
 		D7CB263421394549004D71BD /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7CB263321394549004D71BD /* Colors.swift */; };
@@ -71,6 +77,12 @@
 /* Begin PBXFileReference section */
 		D714842421395EBC00890A9F /* SpineInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpineInput.swift; sourceTree = "<group>"; };
 		D714842621395EE000890A9F /* ArrowMaterial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrowMaterial.swift; sourceTree = "<group>"; };
+		D71484292139773200890A9F /* SpinerSegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinerSegmentedControl.swift; sourceTree = "<group>"; };
+		D714842B2139783800890A9F /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		D714842D2139794300890A9F /* Lato-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Bold.ttf"; sourceTree = "<group>"; };
+		D714842E2139794300890A9F /* Lato-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Light.ttf"; sourceTree = "<group>"; };
+		D7148431213979C800890A9F /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		D714843321397B6A00890A9F /* SpinerTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinerTextField.swift; sourceTree = "<group>"; };
 		D7C96C4C2136E7B90019FBC0 /* WoodenArrowSpineCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WoodenArrowSpineCalculatorTests.swift; sourceTree = "<group>"; };
 		D7CB263121394549004D71BD /* Amatic-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Amatic-Bold.ttf"; sourceTree = "<group>"; };
 		D7CB263321394549004D71BD /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
@@ -141,6 +153,8 @@
 		D7148428213962F200890A9F /* UIElements */ = {
 			isa = PBXGroup;
 			children = (
+				D71484292139773200890A9F /* SpinerSegmentedControl.swift */,
+				D714843321397B6A00890A9F /* SpinerTextField.swift */,
 			);
 			path = UIElements;
 			sourceTree = "<group>";
@@ -182,7 +196,11 @@
 			children = (
 				D7CB263721394ED8004D71BD /* Assets.xcassets */,
 				D7CB263121394549004D71BD /* Amatic-Bold.ttf */,
+				D714842D2139794300890A9F /* Lato-Bold.ttf */,
+				D714842E2139794300890A9F /* Lato-Light.ttf */,
 				D7CB263321394549004D71BD /* Colors.swift */,
+				D714842B2139783800890A9F /* Fonts.swift */,
+				D7148431213979C800890A9F /* Theme.swift */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
@@ -350,7 +368,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D7CB263221394549004D71BD /* Amatic-Bold.ttf in Resources */,
+				D714842F2139794300890A9F /* Lato-Bold.ttf in Resources */,
 				D7FA7B1F2136CCD800DD6EDC /* LaunchScreen.storyboard in Resources */,
+				D71484302139794300890A9F /* Lato-Light.ttf in Resources */,
 				D7CB263821394ED8004D71BD /* Assets.xcassets in Resources */,
 				D7FA7B1A2136CCD500DD6EDC /* Main.storyboard in Resources */,
 			);
@@ -377,12 +397,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D714843421397B6A00890A9F /* SpinerTextField.swift in Sources */,
+				D7148432213979C800890A9F /* Theme.swift in Sources */,
+				D714842C2139783800890A9F /* Fonts.swift in Sources */,
 				D7FA7B172136CCD400DD6EDC /* StatSelectorVC.swift in Sources */,
 				D7CB263421394549004D71BD /* Colors.swift in Sources */,
 				D714842721395EE000890A9F /* ArrowMaterial.swift in Sources */,
 				D7FA7B152136CCD400DD6EDC /* AppDelegate.swift in Sources */,
 				D714842521395EBC00890A9F /* SpineInput.swift in Sources */,
 				D7CB26362139489F004D71BD /* Extensions.swift in Sources */,
+				D714842A2139773200890A9F /* SpinerSegmentedControl.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
