@@ -13,7 +13,7 @@ class StatSelectorVC: UIViewController {
     @IBOutlet weak var materialSelectorControl: SpinerSegmentedControl!
     @IBOutlet weak var drawWeightTextField: SpinerTextField!
     @IBOutlet weak var drawLengthTextField: SpinerTextField!
-    @IBOutlet weak var calculateButton: UIButton!
+    @IBOutlet weak var calculateButton: SpinerButton!
 
     @IBAction func drawWeightTextFieldChanged(_ sender: UITextField) {
         enableDisableCalculateButton()
@@ -61,6 +61,7 @@ class StatSelectorVC: UIViewController {
         materialSelectorControl.applyTheme(theme)
         drawLengthTextField.applyTheme(theme, withPlaceholderText: drawLengthTextField.placeholder!)
         drawWeightTextField.applyTheme(theme, withPlaceholderText: drawWeightTextField.placeholder!)
+        calculateButton.applyTheme(theme)
     }
 }
 

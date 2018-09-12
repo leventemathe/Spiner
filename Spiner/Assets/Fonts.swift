@@ -11,9 +11,13 @@ import UIKit
 protocol Fonts {
     
     var header: UIFont { get }
+    
     var subHeaderBold: UIFont { get }
     var subHeaderLight: UIFont { get }
+    
     var text: UIFont { get }
+    
+    var buttonLarge: UIFont { get }
 }
 
 struct DefaultFonts: Fonts {
@@ -22,4 +26,5 @@ struct DefaultFonts: Fonts {
     let subHeaderBold = UIFont(name: "Lato-Bold", size: 24.0)!
     let subHeaderLight = UIFont(name: "Lato-Light", size: 24.0)!
     let text = UIFont(name: "Lato-Light", size: 14.0)!
+    let buttonLarge = UIFont(name: "Lato-Bold", size: 24.0)!
 }
