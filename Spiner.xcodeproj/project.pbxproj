@@ -16,6 +16,7 @@
 		D7148432213979C800890A9F /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7148431213979C800890A9F /* Theme.swift */; };
 		D714843421397B6A00890A9F /* SpinerTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D714843321397B6A00890A9F /* SpinerTextField.swift */; };
 		D7ACDCF021491C3A0044201D /* SpinerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7ACDCEF21491C3A0044201D /* SpinerButton.swift */; };
+		D7ACDCF22149475B0044201D /* GradientVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7ACDCF12149475B0044201D /* GradientVC.swift */; };
 		D7C96C4D2136E7B90019FBC0 /* WoodenArrowSpineCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C96C4C2136E7B90019FBC0 /* WoodenArrowSpineCalculatorTests.swift */; };
 		D7CB263221394549004D71BD /* Amatic-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D7CB263121394549004D71BD /* Amatic-Bold.ttf */; };
 		D7CB263421394549004D71BD /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7CB263321394549004D71BD /* Colors.swift */; };
@@ -85,6 +86,7 @@
 		D7148431213979C800890A9F /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		D714843321397B6A00890A9F /* SpinerTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinerTextField.swift; sourceTree = "<group>"; };
 		D7ACDCEF21491C3A0044201D /* SpinerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinerButton.swift; sourceTree = "<group>"; };
+		D7ACDCF12149475B0044201D /* GradientVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientVC.swift; sourceTree = "<group>"; };
 		D7C96C4C2136E7B90019FBC0 /* WoodenArrowSpineCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WoodenArrowSpineCalculatorTests.swift; sourceTree = "<group>"; };
 		D7CB263121394549004D71BD /* Amatic-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Amatic-Bold.ttf"; sourceTree = "<group>"; };
 		D7CB263321394549004D71BD /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
@@ -225,6 +227,7 @@
 				D7FA7B162136CCD400DD6EDC /* StatSelectorVC.swift */,
 				D7FA7B182136CCD500DD6EDC /* Main.storyboard */,
 				D7FA7B1D2136CCD800DD6EDC /* LaunchScreen.storyboard */,
+				D7ACDCF12149475B0044201D /* GradientVC.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -406,6 +409,7 @@
 				D7FA7B172136CCD400DD6EDC /* StatSelectorVC.swift in Sources */,
 				D7CB263421394549004D71BD /* Colors.swift in Sources */,
 				D714842721395EE000890A9F /* ArrowMaterial.swift in Sources */,
+				D7ACDCF22149475B0044201D /* GradientVC.swift in Sources */,
 				D7FA7B152136CCD400DD6EDC /* AppDelegate.swift in Sources */,
 				D714842521395EBC00890A9F /* SpineInput.swift in Sources */,
 				D7CB26362139489F004D71BD /* Extensions.swift in Sources */,

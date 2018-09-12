@@ -8,7 +8,7 @@
 
 import UIKit
 
-class StatSelectorVC: UIViewController {
+class StatSelectorVC: GradientVC {
 
     @IBOutlet weak var materialSelectorControl: SpinerSegmentedControl!
     @IBOutlet weak var drawWeightTextField: SpinerTextField!
@@ -63,13 +63,6 @@ class StatSelectorVC: UIViewController {
         drawLengthTextField.applyTheme(theme, withPlaceholderText: drawLengthTextField.placeholder!)
         drawWeightTextField.applyTheme(theme, withPlaceholderText: drawWeightTextField.placeholder!)
         calculateButton.applyTheme(theme)
-    }
-    
-    private func applyThemeToSelf(_ theme: Theme) {
-        let gradient = CAGradientLayer()
-        gradient.frame = view.bounds
-        gradient.colors = [theme.colors.backgroundDark.cgColor, theme.colors.backgroundLight.cgColor]
-        view.layer.insertSublayer(gradient, at: 0)
     }
 }
 
