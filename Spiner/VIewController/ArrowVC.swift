@@ -19,4 +19,20 @@ class ArrowVC: GradientVC {
     override func viewDidLoad() {
         applyThemeToSelf(theme)
     }
+    
+    func setTitle(_ title: String) {
+        titleLbl.text = title
+    }
+    
+    func setSpine(_ spine: String) {
+        spineLbl.text = spine
+    }
+    
+    func setExtra(_ extra: String) {
+        extraSpineLbl.text = extra
+    }
+    
+    func setStats(_ stats: String) {
+        statsLbl.text = stats
+    }
 }

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SpinerSegmentedControl: UISegmentedControl {
+class SpinerSegmentedControl: UISegmentedControl, ThemeableView {
     
     func applyTheme(_ theme: Theme) {
         tintColor = theme.colors.tint

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SpinerButton: UIButton {
+class SpinerButton: UIButton, ThemeableView {
 
     func applyTheme(_ theme: Theme) {
         backgroundColor = theme.colors.tint

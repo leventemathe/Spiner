@@ -22,7 +22,7 @@ protocol Fonts {
 
 struct DefaultFonts: Fonts {
     
-    let header = UIFont(name: "Amatic-Bold", size: 32.0)!
+    let header = UIFont(name: "Amatic-Bold", size: 36.0)!
     let subHeaderBold = UIFont(name: "Lato-Bold", size: 24.0)!
     let subHeaderLight = UIFont(name: "Lato-Light", size: 24.0)!
     let text = UIFont(name: "Lato-Light", size: 14.0)!

@@ -71,6 +71,9 @@ class StatSelectorVC: GradientVC {
     }
     
     func applyTheme() {
+        navigationController?.navigationBar.tintColor = theme.colors.tint
+        navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        navigationController?.navigationBar.shadowImage = UIImage()
         applyThemeToSelf(theme)
         materialSelectorControl.applyTheme(theme)
         drawLengthTextField.applyTheme(theme, withPlaceholderText: drawLengthTextField.placeholder!)

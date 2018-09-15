@@ -26,6 +26,7 @@
 		D7F52FE0214D221A00B8974B /* WoodenArrowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F52FDF214D221A00B8974B /* WoodenArrowVC.swift */; };
 		D7F52FE2214D291F00B8974B /* ArrowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F52FE1214D291F00B8974B /* ArrowVC.swift */; };
 		D7F52FE8214D55EB00B8974B /* ThemeableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F52FE7214D55EB00B8974B /* ThemeableVC.swift */; };
+		D7F52FEC214D5D4E00B8974B /* ThemeableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F52FEB214D5D4E00B8974B /* ThemeableView.swift */; };
 		D7FA7B152136CCD400DD6EDC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7FA7B142136CCD400DD6EDC /* AppDelegate.swift */; };
 		D7FA7B172136CCD400DD6EDC /* StatSelectorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7FA7B162136CCD400DD6EDC /* StatSelectorVC.swift */; };
 		D7FA7B1A2136CCD500DD6EDC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7FA7B182136CCD500DD6EDC /* Main.storyboard */; };
@@ -100,6 +101,7 @@
 		D7F52FDF214D221A00B8974B /* WoodenArrowVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WoodenArrowVC.swift; sourceTree = "<group>"; };
 		D7F52FE1214D291F00B8974B /* ArrowVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrowVC.swift; sourceTree = "<group>"; };
 		D7F52FE7214D55EB00B8974B /* ThemeableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeableVC.swift; sourceTree = "<group>"; };
+		D7F52FEB214D5D4E00B8974B /* ThemeableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeableView.swift; sourceTree = "<group>"; };
 		D7FA7B112136CCD400DD6EDC /* Spiner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spiner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7FA7B142136CCD400DD6EDC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D7FA7B162136CCD400DD6EDC /* StatSelectorVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatSelectorVC.swift; sourceTree = "<group>"; };
@@ -165,6 +167,7 @@
 		D7148428213962F200890A9F /* UIElements */ = {
 			isa = PBXGroup;
 			children = (
+				D7F52FEB214D5D4E00B8974B /* ThemeableView.swift */,
 				D71484292139773200890A9F /* SpinerSegmentedControl.swift */,
 				D714843321397B6A00890A9F /* SpinerTextField.swift */,
 				D7ACDCEF21491C3A0044201D /* SpinerButton.swift */,
@@ -434,6 +437,7 @@
 				D7CB263421394549004D71BD /* Colors.swift in Sources */,
 				D714842721395EE000890A9F /* ArrowMaterial.swift in Sources */,
 				D7ACDCF22149475B0044201D /* GradientVC.swift in Sources */,
+				D7F52FEC214D5D4E00B8974B /* ThemeableView.swift in Sources */,
 				D7FA7B152136CCD400DD6EDC /* AppDelegate.swift in Sources */,
 				D714842521395EBC00890A9F /* SpineInput.swift in Sources */,
 				D7CB26362139489F004D71BD /* Extensions.swift in Sources */,
