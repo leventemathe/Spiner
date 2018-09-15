@@ -12,7 +12,7 @@ class SpinerSegmentedControl: UISegmentedControl {
     
     func applyTheme(_ theme: Theme) {
         tintColor = theme.colors.tint
-        let attr = [NSAttributedStringKey.font: theme.fonts.text]
+        let attr = [NSAttributedString.Key.font: theme.fonts.text]
         setTitleTextAttributes(attr, for: .normal)
     }
 }

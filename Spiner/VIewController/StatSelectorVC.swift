@@ -38,7 +38,15 @@ class StatSelectorVC: GradientVC {
         let drawLength = Double(drawLengthTextField.text!)!
         let arrowMaterial = mapArrowMaterialString()
         let spineInput = SpineInput(drawWeight: drawWeight, drawLength: drawLength, arrowMaterial: arrowMaterial)
-        print(spineInput)
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        var arrowVC: UIViewController!
+        switch arrowMaterial {
+        case .carbon:
+            arrowVC = storyboard.instantiateViewController(withIdentifier: "CarbonArrowVC") as! CarbonArrowVC
+        case .wooden:
+            arrowVC = storyboard.instantiateViewController(withIdentifier: "WoodenArrowVC") as! WoodenArrowVC
+        }
+        navigationController?.pushViewController(arrowVC, animated: true)
     }
     
     private func mapArrowMaterialString() -> ArrowMaterial {
@@ -54,10 +62,15 @@ class StatSelectorVC: GradientVC {
         super.viewDidLoad()
     }
     
-    // TODO: inject this
-    var theme: Theme = DefaultTheme()
+    override func viewWillAppear(_ animated: Bool) {
+        navigationController?.navigationBar.isHidden = true
+    }
     
-    private func applyTheme() {
+    override func viewWillDisappear(_ animated: Bool) {
+        navigationController?.navigationBar.isHidden = false
+    }
+    
+    func applyTheme() {
         applyThemeToSelf(theme)
         materialSelectorControl.applyTheme(theme)
         drawLengthTextField.applyTheme(theme, withPlaceholderText: drawLengthTextField.placeholder!)

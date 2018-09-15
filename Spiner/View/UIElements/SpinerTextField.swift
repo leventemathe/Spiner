@@ -40,9 +40,11 @@ class SpinerTextField: UITextField {
     func applyTheme(_ theme: Theme, withPlaceholderText placeholder: String) {
         self.theme = theme
         let attr = [
-            NSAttributedStringKey.foregroundColor: theme.colors.tint,
-            NSAttributedStringKey.font: theme.fonts.text
+            NSAttributedString.Key.foregroundColor: theme.colors.tint,
+            NSAttributedString.Key.font: theme.fonts.text
         ]
         attributedPlaceholder = NSAttributedString(string: placeholder, attributes: attr)
+        
+        textColor = theme.colors.tint
     }
 }

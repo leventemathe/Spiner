@@ -8,8 +8,11 @@
 
 import UIKit
 
-class GradientVC: UIViewController {
+class GradientVC: UIViewController, ThemeableVC {
 
+    // TODO: inject this
+    var theme: Theme = DefaultTheme()
+    
     func applyThemeToSelf(_ theme: Theme) {
         let gradient = CAGradientLayer()
         gradient.frame = view.bounds

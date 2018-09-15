@@ -13,7 +13,8 @@ class SpinerButton: UIButton {
     func applyTheme(_ theme: Theme) {
         backgroundColor = theme.colors.tint
         titleLabel?.font = theme.fonts.buttonLarge
-        titleLabel?.tintColor = theme.colors.backgroundLight
+        setTitleColor(theme.colors.backgroundDark, for: .normal)
+        setTitleColor(theme.colors.backgroundLight, for: .disabled)
         
         layer.cornerRadius = bounds.size.height / 2.0
     }

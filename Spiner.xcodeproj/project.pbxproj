@@ -17,11 +17,15 @@
 		D714843421397B6A00890A9F /* SpinerTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D714843321397B6A00890A9F /* SpinerTextField.swift */; };
 		D7ACDCF021491C3A0044201D /* SpinerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7ACDCEF21491C3A0044201D /* SpinerButton.swift */; };
 		D7ACDCF22149475B0044201D /* GradientVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7ACDCF12149475B0044201D /* GradientVC.swift */; };
+		D7ACDCF4214D133D0044201D /* CarbonArrowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7ACDCF3214D133D0044201D /* CarbonArrowVC.swift */; };
 		D7C96C4D2136E7B90019FBC0 /* WoodenArrowSpineCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C96C4C2136E7B90019FBC0 /* WoodenArrowSpineCalculatorTests.swift */; };
 		D7CB263221394549004D71BD /* Amatic-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D7CB263121394549004D71BD /* Amatic-Bold.ttf */; };
 		D7CB263421394549004D71BD /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7CB263321394549004D71BD /* Colors.swift */; };
 		D7CB26362139489F004D71BD /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7CB26352139489F004D71BD /* Extensions.swift */; };
 		D7CB263821394ED8004D71BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7CB263721394ED8004D71BD /* Assets.xcassets */; };
+		D7F52FE0214D221A00B8974B /* WoodenArrowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F52FDF214D221A00B8974B /* WoodenArrowVC.swift */; };
+		D7F52FE2214D291F00B8974B /* ArrowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F52FE1214D291F00B8974B /* ArrowVC.swift */; };
+		D7F52FE8214D55EB00B8974B /* ThemeableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F52FE7214D55EB00B8974B /* ThemeableVC.swift */; };
 		D7FA7B152136CCD400DD6EDC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7FA7B142136CCD400DD6EDC /* AppDelegate.swift */; };
 		D7FA7B172136CCD400DD6EDC /* StatSelectorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7FA7B162136CCD400DD6EDC /* StatSelectorVC.swift */; };
 		D7FA7B1A2136CCD500DD6EDC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7FA7B182136CCD500DD6EDC /* Main.storyboard */; };
@@ -87,11 +91,15 @@
 		D714843321397B6A00890A9F /* SpinerTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinerTextField.swift; sourceTree = "<group>"; };
 		D7ACDCEF21491C3A0044201D /* SpinerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinerButton.swift; sourceTree = "<group>"; };
 		D7ACDCF12149475B0044201D /* GradientVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientVC.swift; sourceTree = "<group>"; };
+		D7ACDCF3214D133D0044201D /* CarbonArrowVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarbonArrowVC.swift; sourceTree = "<group>"; };
 		D7C96C4C2136E7B90019FBC0 /* WoodenArrowSpineCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WoodenArrowSpineCalculatorTests.swift; sourceTree = "<group>"; };
 		D7CB263121394549004D71BD /* Amatic-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Amatic-Bold.ttf"; sourceTree = "<group>"; };
 		D7CB263321394549004D71BD /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		D7CB26352139489F004D71BD /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		D7CB263721394ED8004D71BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D7F52FDF214D221A00B8974B /* WoodenArrowVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WoodenArrowVC.swift; sourceTree = "<group>"; };
+		D7F52FE1214D291F00B8974B /* ArrowVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrowVC.swift; sourceTree = "<group>"; };
+		D7F52FE7214D55EB00B8974B /* ThemeableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeableVC.swift; sourceTree = "<group>"; };
 		D7FA7B112136CCD400DD6EDC /* Spiner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spiner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7FA7B142136CCD400DD6EDC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D7FA7B162136CCD400DD6EDC /* StatSelectorVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatSelectorVC.swift; sourceTree = "<group>"; };
@@ -164,6 +172,20 @@
 			path = UIElements;
 			sourceTree = "<group>";
 		};
+		D7ACDCF5214D134C0044201D /* VIewController */ = {
+			isa = PBXGroup;
+			children = (
+				D7F52FE7214D55EB00B8974B /* ThemeableVC.swift */,
+				D7ACDCF12149475B0044201D /* GradientVC.swift */,
+				D7FA7B162136CCD400DD6EDC /* StatSelectorVC.swift */,
+				D7F52FE1214D291F00B8974B /* ArrowVC.swift */,
+				D7ACDCF3214D133D0044201D /* CarbonArrowVC.swift */,
+				D7F52FDF214D221A00B8974B /* WoodenArrowVC.swift */,
+				D7FA7B182136CCD500DD6EDC /* Main.storyboard */,
+			);
+			path = VIewController;
+			sourceTree = "<group>";
+		};
 		D7FA7B082136CCD400DD6EDC = {
 			isa = PBXGroup;
 			children = (
@@ -189,6 +211,7 @@
 			children = (
 				D714842321395E9A00890A9F /* Model */,
 				D714842221395E8800890A9F /* ViewModel */,
+				D7ACDCF5214D134C0044201D /* VIewController */,
 				D7FA7B282136CD1600DD6EDC /* View */,
 				D7FA7B272136CD0800DD6EDC /* Supporting Files */,
 				D7FA7B262136CCFE00DD6EDC /* Assets */,
@@ -224,10 +247,7 @@
 			isa = PBXGroup;
 			children = (
 				D7148428213962F200890A9F /* UIElements */,
-				D7FA7B162136CCD400DD6EDC /* StatSelectorVC.swift */,
-				D7FA7B182136CCD500DD6EDC /* Main.storyboard */,
 				D7FA7B1D2136CCD800DD6EDC /* LaunchScreen.storyboard */,
-				D7ACDCF12149475B0044201D /* GradientVC.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -337,13 +357,15 @@
 				TargetAttributes = {
 					D7FA7B102136CCD400DD6EDC = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1000;
 					};
 					D7FA7B2D2136CE0D00DD6EDC = {
 						CreatedOnToolsVersion = 9.4.1;
-						LastSwiftMigration = 0940;
+						LastSwiftMigration = 1000;
 					};
 					D7FA7B352136CE0D00DD6EDC = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1000;
 						TestTargetID = D7FA7B102136CCD400DD6EDC;
 					};
 				};
@@ -403,6 +425,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7F52FE0214D221A00B8974B /* WoodenArrowVC.swift in Sources */,
+				D7F52FE2214D291F00B8974B /* ArrowVC.swift in Sources */,
 				D714843421397B6A00890A9F /* SpinerTextField.swift in Sources */,
 				D7148432213979C800890A9F /* Theme.swift in Sources */,
 				D714842C2139783800890A9F /* Fonts.swift in Sources */,
@@ -413,7 +437,9 @@
 				D7FA7B152136CCD400DD6EDC /* AppDelegate.swift in Sources */,
 				D714842521395EBC00890A9F /* SpineInput.swift in Sources */,
 				D7CB26362139489F004D71BD /* Extensions.swift in Sources */,
+				D7F52FE8214D55EB00B8974B /* ThemeableVC.swift in Sources */,
 				D7ACDCF021491C3A0044201D /* SpinerButton.swift in Sources */,
+				D7ACDCF4214D133D0044201D /* CarbonArrowVC.swift in Sources */,
 				D714842A2139773200890A9F /* SpinerSegmentedControl.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -609,7 +635,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mathe.levente.Spiner;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -629,7 +655,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mathe.levente.Spiner;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -657,7 +683,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -686,7 +712,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.mathe.levente.SpineCalculator;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -707,7 +733,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mathe.levente.SpineCalculatorTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Spiner.app/Spiner";
 			};
@@ -727,7 +753,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mathe.levente.SpineCalculatorTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Spiner.app/Spiner";
 			};
