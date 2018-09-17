@@ -9,7 +9,7 @@
 /**
  Implement this protocol to create specific spine calculators, like for wooden or carbon arrows.
  */
-protocol SpineCalculator {
+public protocol SpineCalculator {
     
     /**
      Calculates the common cases.
@@ -25,14 +25,14 @@ extension SpineCalculator {
     /**
      A default implementation to calculate arrow spine at the standard's arrow length.
      */
-    func calculate(_ drawWeight: Double) -> Double {
+    public func calculate(_ drawWeight: Double) -> Double {
         return commonCalculator.calculate(drawWeight)
     }
     
     /**
      A default implementation to calculate arrow spine at a draw length that's different from the standard's arrow length.
      */
-    func calculate(_ drawWeight: Double, drawLength: Double) -> Double {
+    public func calculate(_ drawWeight: Double, drawLength: Double) -> Double {
         return commonCalculator.calculate(drawWeight, drawLength: drawLength)
     }
 }

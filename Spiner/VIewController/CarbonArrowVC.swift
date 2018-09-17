@@ -7,7 +7,17 @@
 //
 
 import UIKit
+import SpineCalculator
 
 class CarbonArrowVC: UIViewController {
     
+    var input: SpineInput!
+    var calc: SpineCalculator!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        let spine = calc.calculate(input.drawWeight, drawLength: input.drawLength)
+        let arrowVC = children.first! as! ArrowVC
+        arrowVC.setSpine(String(spine))
+    }
 }

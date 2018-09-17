@@ -6,11 +6,11 @@
 //  Copyright © 2018. Levente Máthé. All rights reserved.
 //
 
-struct SyntheticArrowSpineCalculator: SpineCalculator {
+public struct SyntheticArrowSpineCalculator: SpineCalculator {
     
-    let commonCalculator: CommonSpineCalculator
+    public let commonCalculator: CommonSpineCalculator
     
-    init() {
+    public init() {
         commonCalculator = CommonSpineCalculator(arrowLength: 28.0, drawLengthCompensation: 4.0)
     }
 }

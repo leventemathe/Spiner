@@ -148,13 +148,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		D714842221395E8800890A9F /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
 		D714842321395E9A00890A9F /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -213,7 +206,6 @@
 			isa = PBXGroup;
 			children = (
 				D714842321395E9A00890A9F /* Model */,
-				D714842221395E8800890A9F /* ViewModel */,
 				D7ACDCF5214D134C0044201D /* VIewController */,
 				D7FA7B282136CD1600DD6EDC /* View */,
 				D7FA7B272136CD0800DD6EDC /* Supporting Files */,
@@ -678,6 +670,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = SpineCalculator/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -708,6 +701,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = SpineCalculator/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
