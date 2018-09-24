@@ -23,6 +23,7 @@
 		D7CB263421394549004D71BD /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7CB263321394549004D71BD /* Colors.swift */; };
 		D7CB26362139489F004D71BD /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7CB26352139489F004D71BD /* Extensions.swift */; };
 		D7CB263821394ED8004D71BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7CB263721394ED8004D71BD /* Assets.xcassets */; };
+		D7F353AD2154FB3A00AFB4B8 /* SyntheticArrowSpineCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F353AC2154FB3A00AFB4B8 /* SyntheticArrowSpineCalculatorTests.swift */; };
 		D7F52FE0214D221A00B8974B /* WoodenArrowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F52FDF214D221A00B8974B /* WoodenArrowVC.swift */; };
 		D7F52FE2214D291F00B8974B /* ArrowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F52FE1214D291F00B8974B /* ArrowVC.swift */; };
 		D7F52FE8214D55EB00B8974B /* ThemeableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F52FE7214D55EB00B8974B /* ThemeableVC.swift */; };
@@ -32,14 +33,12 @@
 		D7FA7B1A2136CCD500DD6EDC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7FA7B182136CCD500DD6EDC /* Main.storyboard */; };
 		D7FA7B1F2136CCD800DD6EDC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7FA7B1D2136CCD800DD6EDC /* LaunchScreen.storyboard */; };
 		D7FA7B372136CE0D00DD6EDC /* SpineCalculator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7FA7B2E2136CE0D00DD6EDC /* SpineCalculator.framework */; };
-		D7FA7B3E2136CE0D00DD6EDC /* SpineCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7FA7B3D2136CE0D00DD6EDC /* SpineCalculatorTests.swift */; };
 		D7FA7B432136CE0E00DD6EDC /* SpineCalculator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7FA7B2E2136CE0D00DD6EDC /* SpineCalculator.framework */; };
 		D7FA7B442136CE0E00DD6EDC /* SpineCalculator.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D7FA7B2E2136CE0D00DD6EDC /* SpineCalculator.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D7FA7B4D2136CE4700DD6EDC /* SpineCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7FA7B4C2136CE4700DD6EDC /* SpineCalculator.swift */; };
 		D7FA7B4F2136CE6600DD6EDC /* CommonSpineCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7FA7B4E2136CE6600DD6EDC /* CommonSpineCalculator.swift */; };
 		D7FA7B512136CE8B00DD6EDC /* WoodenArrowSpineCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7FA7B502136CE8B00DD6EDC /* WoodenArrowSpineCalculator.swift */; };
 		D7FA7B532136CE9B00DD6EDC /* SyntheticArrowSpineCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7FA7B522136CE9B00DD6EDC /* SyntheticArrowSpineCalculator.swift */; };
-		D7FA7B552136CEDB00DD6EDC /* SpineConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7FA7B542136CEDB00DD6EDC /* SpineConverter.swift */; };
 		D7FA7B572136CF0D00DD6EDC /* CommonCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7FA7B562136CF0D00DD6EDC /* CommonCalculatorTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -98,6 +97,7 @@
 		D7CB263321394549004D71BD /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		D7CB26352139489F004D71BD /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		D7CB263721394ED8004D71BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D7F353AC2154FB3A00AFB4B8 /* SyntheticArrowSpineCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyntheticArrowSpineCalculatorTests.swift; sourceTree = "<group>"; };
 		D7F52FDF214D221A00B8974B /* WoodenArrowVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WoodenArrowVC.swift; sourceTree = "<group>"; };
 		D7F52FE1214D291F00B8974B /* ArrowVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrowVC.swift; sourceTree = "<group>"; };
 		D7F52FE7214D55EB00B8974B /* ThemeableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeableVC.swift; sourceTree = "<group>"; };
@@ -111,13 +111,11 @@
 		D7FA7B2E2136CE0D00DD6EDC /* SpineCalculator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SpineCalculator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7FA7B312136CE0D00DD6EDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D7FA7B362136CE0D00DD6EDC /* SpineCalculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpineCalculatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D7FA7B3D2136CE0D00DD6EDC /* SpineCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpineCalculatorTests.swift; sourceTree = "<group>"; };
 		D7FA7B3F2136CE0D00DD6EDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D7FA7B4C2136CE4700DD6EDC /* SpineCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpineCalculator.swift; sourceTree = "<group>"; };
 		D7FA7B4E2136CE6600DD6EDC /* CommonSpineCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonSpineCalculator.swift; sourceTree = "<group>"; };
 		D7FA7B502136CE8B00DD6EDC /* WoodenArrowSpineCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WoodenArrowSpineCalculator.swift; sourceTree = "<group>"; };
 		D7FA7B522136CE9B00DD6EDC /* SyntheticArrowSpineCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyntheticArrowSpineCalculator.swift; sourceTree = "<group>"; };
-		D7FA7B542136CEDB00DD6EDC /* SpineConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpineConverter.swift; sourceTree = "<group>"; };
 		D7FA7B562136CF0D00DD6EDC /* CommonCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonCalculatorTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -255,7 +253,6 @@
 				D7FA7B4C2136CE4700DD6EDC /* SpineCalculator.swift */,
 				D7FA7B502136CE8B00DD6EDC /* WoodenArrowSpineCalculator.swift */,
 				D7FA7B522136CE9B00DD6EDC /* SyntheticArrowSpineCalculator.swift */,
-				D7FA7B542136CEDB00DD6EDC /* SpineConverter.swift */,
 			);
 			path = SpineCalculator;
 			sourceTree = "<group>";
@@ -264,8 +261,8 @@
 			isa = PBXGroup;
 			children = (
 				D7FA7B562136CF0D00DD6EDC /* CommonCalculatorTests.swift */,
-				D7FA7B3D2136CE0D00DD6EDC /* SpineCalculatorTests.swift */,
 				D7C96C4C2136E7B90019FBC0 /* WoodenArrowSpineCalculatorTests.swift */,
+				D7F353AC2154FB3A00AFB4B8 /* SyntheticArrowSpineCalculatorTests.swift */,
 				D7FA7B3F2136CE0D00DD6EDC /* Info.plist */,
 			);
 			path = SpineCalculatorTests;
@@ -446,7 +443,6 @@
 			files = (
 				D7FA7B4F2136CE6600DD6EDC /* CommonSpineCalculator.swift in Sources */,
 				D7FA7B532136CE9B00DD6EDC /* SyntheticArrowSpineCalculator.swift in Sources */,
-				D7FA7B552136CEDB00DD6EDC /* SpineConverter.swift in Sources */,
 				D7FA7B4D2136CE4700DD6EDC /* SpineCalculator.swift in Sources */,
 				D7FA7B512136CE8B00DD6EDC /* WoodenArrowSpineCalculator.swift in Sources */,
 			);
@@ -457,8 +453,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D7C96C4D2136E7B90019FBC0 /* WoodenArrowSpineCalculatorTests.swift in Sources */,
+				D7F353AD2154FB3A00AFB4B8 /* SyntheticArrowSpineCalculatorTests.swift in Sources */,
 				D7FA7B572136CF0D00DD6EDC /* CommonCalculatorTests.swift in Sources */,
-				D7FA7B3E2136CE0D00DD6EDC /* SpineCalculatorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

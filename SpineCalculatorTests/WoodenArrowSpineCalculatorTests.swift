@@ -13,6 +13,31 @@ class WoodenArrowSpineCalculatorTests: XCTestCase {
     
     var calc = WoodenArrowSpineCalculator()
     
+    func testSpineCalculator() {
+        let expected = 1300.0
+        let actual = calc.calculate(20)
+        XCTAssert(abs(expected - actual) < 0.001, "testSpineCalculator")
+    }
+    
+    func testSpineCalculatorAtRegularDrawLength() {
+        let expected = 1300.0
+        let actual = calc.calculate(20.0, drawLength: 28.0)
+        XCTAssert(abs(expected - actual) < 0.001, "testSpineCalculator")
+    }
+    
+    func testSpineCalculatorLongerDrawLength() {
+        let expected = 1040.0
+        let actual = calc.calculate(20, drawLength: 29)
+        print("----- Expected: \(expected), actual: \(actual) -----")
+        XCTAssert(abs(expected - actual) < 0.001, "testSpineCalculatorLongerDrawLength")
+    }
+    
+    func testSpineCalculatorShorterDrawLength() {
+        let expected = 1733.3333
+        let actual = calc.calculate(30, drawLength: 25.0)
+        XCTAssert(abs(expected - actual) < 0.001, "testSpineCalculatorShorterDrawLength")
+    }
+    
     func testSpineAsPoundage() {
         let expected = 45.0
         let actual = calc.calculateAsPundage(35.0)

@@ -37,22 +37,22 @@ class CommonCalculatorTests: XCTestCase {
     
     func testDrawWeightWithDrawLenghtNoCompensation() {
         let arrowLength = 26.0
-        let drawLength = 28.0
+        let drawLength = 30.0
         let drawWeight = 30.0
         let comp = 0.0
         calc = CommonSpineCalculator(arrowLength: arrowLength, drawLengthCompensation: comp)
-        let expected = (arrowLength / (drawWeight + 2.0 * comp)) * 1000.0
+        let expected = 866.666
         let actual = calc.calculate(drawWeight, drawLength: drawLength)
         XCTAssert(abs(expected - actual) < 0.001, "testDrawWeightWithDrawLenghtNoCompensation")
     }
     
     func testDrawWeightWithDrawLenghtWithCompensation() {
         let arrowLength = 26.0
-        let drawLength = 28.0
+        let drawLength = 30.0
         let drawWeight = 30.0
         let comp = 4.0
         calc = CommonSpineCalculator(arrowLength: arrowLength, drawLengthCompensation: comp)
-        let expected = (arrowLength / (drawWeight + 2.0 * comp)) * 1000.0
+        let expected = 684.21
         let actual = calc.calculate(drawWeight, drawLength: drawLength)
         XCTAssert(abs(expected - actual) < 0.001, "testDrawWeightWithDrawLenghtWithCompensation")
     }
