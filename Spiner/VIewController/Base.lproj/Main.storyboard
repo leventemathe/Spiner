@@ -119,6 +119,7 @@
                         <outlet property="drawLengthTextField" destination="7FZ-5K-esZ" id="uR2-EU-2QW"/>
                         <outlet property="drawWeightTextField" destination="fbb-Y0-6GX" id="SuR-Mg-04D"/>
                         <outlet property="materialSelectorControl" destination="XCH-oO-nq6" id="CDi-H8-Gly"/>
+                        <outlet property="stackViewCenterYConstraint" destination="4oO-BG-NbB" id="jHB-tn-8yi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -134,7 +135,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="IFG-5c-nIb">
-                                <rect key="frame" x="52.5" y="150.5" width="215.5" height="267"/>
+                                <rect key="frame" x="192.5" y="166.5" width="215.5" height="267"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Carbon Arrow" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Yl-P3-3JR">
                                         <rect key="frame" x="45.5" y="0.0" width="124" height="39"/>
@@ -213,12 +214,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LCa-tj-myL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1658" y="117"/>
+            <point key="canvasLocation" x="1886" y="188"/>
         </scene>
-        <!--Carbon ArrowVC-->
+        <!--Carbon Spine CalculatorVC-->
         <scene sceneID="OTF-fI-2hg">
             <objects>
-                <viewController restorationIdentifier="CarbonArrowVC" storyboardIdentifier="CarbonArrowVC" id="qvz-IJ-uwm" customClass="CarbonArrowVC" customModule="Spiner" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController restorationIdentifier="CarbonArrowVC" storyboardIdentifier="CarbonArrowVC" id="qvz-IJ-uwm" customClass="CarbonSpineCalculatorVC" customModule="Spiner" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0AF-I7-gIe">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

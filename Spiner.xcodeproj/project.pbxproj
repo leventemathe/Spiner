@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D703B0E8215BBC4A0087F72F /* SpineCalculatorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D703B0E7215BBC4A0087F72F /* SpineCalculatorVC.swift */; };
 		D714842521395EBC00890A9F /* SpineInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = D714842421395EBC00890A9F /* SpineInput.swift */; };
 		D714842721395EE000890A9F /* ArrowMaterial.swift in Sources */ = {isa = PBXBuildFile; fileRef = D714842621395EE000890A9F /* ArrowMaterial.swift */; };
 		D714842A2139773200890A9F /* SpinerSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = D71484292139773200890A9F /* SpinerSegmentedControl.swift */; };
@@ -17,7 +18,7 @@
 		D714843421397B6A00890A9F /* SpinerTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D714843321397B6A00890A9F /* SpinerTextField.swift */; };
 		D7ACDCF021491C3A0044201D /* SpinerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7ACDCEF21491C3A0044201D /* SpinerButton.swift */; };
 		D7ACDCF22149475B0044201D /* GradientVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7ACDCF12149475B0044201D /* GradientVC.swift */; };
-		D7ACDCF4214D133D0044201D /* CarbonArrowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7ACDCF3214D133D0044201D /* CarbonArrowVC.swift */; };
+		D7ACDCF4214D133D0044201D /* CarbonSpineCalculatorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7ACDCF3214D133D0044201D /* CarbonSpineCalculatorVC.swift */; };
 		D7C96C4D2136E7B90019FBC0 /* WoodenArrowSpineCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C96C4C2136E7B90019FBC0 /* WoodenArrowSpineCalculatorTests.swift */; };
 		D7CB263221394549004D71BD /* Amatic-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D7CB263121394549004D71BD /* Amatic-Bold.ttf */; };
 		D7CB263421394549004D71BD /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7CB263321394549004D71BD /* Colors.swift */; };
@@ -81,6 +82,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		D703B0E7215BBC4A0087F72F /* SpineCalculatorVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpineCalculatorVC.swift; sourceTree = "<group>"; };
 		D714842421395EBC00890A9F /* SpineInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpineInput.swift; sourceTree = "<group>"; };
 		D714842621395EE000890A9F /* ArrowMaterial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrowMaterial.swift; sourceTree = "<group>"; };
 		D71484292139773200890A9F /* SpinerSegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinerSegmentedControl.swift; sourceTree = "<group>"; };
@@ -91,7 +93,7 @@
 		D714843321397B6A00890A9F /* SpinerTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinerTextField.swift; sourceTree = "<group>"; };
 		D7ACDCEF21491C3A0044201D /* SpinerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinerButton.swift; sourceTree = "<group>"; };
 		D7ACDCF12149475B0044201D /* GradientVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientVC.swift; sourceTree = "<group>"; };
-		D7ACDCF3214D133D0044201D /* CarbonArrowVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarbonArrowVC.swift; sourceTree = "<group>"; };
+		D7ACDCF3214D133D0044201D /* CarbonSpineCalculatorVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarbonSpineCalculatorVC.swift; sourceTree = "<group>"; };
 		D7C96C4C2136E7B90019FBC0 /* WoodenArrowSpineCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WoodenArrowSpineCalculatorTests.swift; sourceTree = "<group>"; };
 		D7CB263121394549004D71BD /* Amatic-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Amatic-Bold.ttf"; sourceTree = "<group>"; };
 		D7CB263321394549004D71BD /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
@@ -173,7 +175,8 @@
 				D7ACDCF12149475B0044201D /* GradientVC.swift */,
 				D7FA7B162136CCD400DD6EDC /* StatSelectorVC.swift */,
 				D7F52FE1214D291F00B8974B /* ArrowVC.swift */,
-				D7ACDCF3214D133D0044201D /* CarbonArrowVC.swift */,
+				D703B0E7215BBC4A0087F72F /* SpineCalculatorVC.swift */,
+				D7ACDCF3214D133D0044201D /* CarbonSpineCalculatorVC.swift */,
 				D7F52FDF214D221A00B8974B /* WoodenArrowVC.swift */,
 				D7FA7B182136CCD500DD6EDC /* Main.storyboard */,
 			);
@@ -427,12 +430,13 @@
 				D714842721395EE000890A9F /* ArrowMaterial.swift in Sources */,
 				D7ACDCF22149475B0044201D /* GradientVC.swift in Sources */,
 				D7F52FEC214D5D4E00B8974B /* ThemeableView.swift in Sources */,
+				D703B0E8215BBC4A0087F72F /* SpineCalculatorVC.swift in Sources */,
 				D7FA7B152136CCD400DD6EDC /* AppDelegate.swift in Sources */,
 				D714842521395EBC00890A9F /* SpineInput.swift in Sources */,
 				D7CB26362139489F004D71BD /* Extensions.swift in Sources */,
 				D7F52FE8214D55EB00B8974B /* ThemeableVC.swift in Sources */,
 				D7ACDCF021491C3A0044201D /* SpinerButton.swift in Sources */,
-				D7ACDCF4214D133D0044201D /* CarbonArrowVC.swift in Sources */,
+				D7ACDCF4214D133D0044201D /* CarbonSpineCalculatorVC.swift in Sources */,
 				D714842A2139773200890A9F /* SpinerSegmentedControl.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

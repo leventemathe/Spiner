@@ -9,7 +9,7 @@
 import UIKit
 
 class GradientVC: UIViewController, ThemeableVC {
-
+    
     // TODO: inject this
     var theme: Theme = DefaultTheme()
     

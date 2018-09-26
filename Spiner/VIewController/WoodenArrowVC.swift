@@ -7,9 +7,13 @@
 //
 
 import UIKit
+import SpineCalculator
 
-class WoodenArrowVC: UIViewController {
+class WoodenArrowVC: UIViewController, SpineCalculatorVC {
 
+    var input: SpineInput!
+    var calc: SpineCalculator!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }

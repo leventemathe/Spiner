@@ -16,6 +16,9 @@ class StatSelectorVC: GradientVC {
     @IBOutlet weak var drawLengthTextField: SpinerTextField!
     @IBOutlet weak var calculateButton: SpinerButton!
 
+    @IBOutlet weak var stackViewCenterYConstraint: NSLayoutConstraint!
+    private let stackViewCenterYConstraintMovement: CGFloat = 180.0
+    
     @IBAction func drawWeightTextFieldChanged(_ sender: UITextField) {
         enableDisableCalculateButton()
     }
@@ -42,7 +45,7 @@ class StatSelectorVC: GradientVC {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         switch arrowMaterial {
         case .carbon:
-            let arrowVC = storyboard.instantiateViewController(withIdentifier: "CarbonArrowVC") as! CarbonArrowVC
+            let arrowVC = storyboard.instantiateViewController(withIdentifier: "CarbonArrowVC") as! CarbonSpineCalculatorVC
             arrowVC.input = spineInput
             arrowVC.calc = SyntheticArrowSpineCalculator()
             navigationController?.pushViewController(arrowVC, animated: true)
@@ -60,9 +63,30 @@ class StatSelectorVC: GradientVC {
     }
     
     override func viewDidLoad() {
+        observeKeyboard()
+        hideKeyboardWhenTappedAround()
         calculateButton.isEnabled = false
         applyTheme()
         super.viewDidLoad()
+    }
+    
+    private func observeKeyboard() {
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardDidShow), name: UIResponder.keyboardDidShowNotification, object: nil);
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardDidHide), name: UIResponder.keyboardDidHideNotification, object: nil);
+    }
+    
+    @objc private func keyboardDidShow() {
+        UIView.animate(withDuration: 0.3, animations: {
+            self.stackViewCenterYConstraint.constant -= self.stackViewCenterYConstraintMovement
+            self.view.layoutIfNeeded()
+        })
+    }
+    
+    @objc private func keyboardDidHide() {
+        UIView.animate(withDuration: 0.3, animations: {
+            self.stackViewCenterYConstraint.constant = 0.0
+            self.view.layoutIfNeeded()
+        })
     }
     
     override func viewWillAppear(_ animated: Bool) {

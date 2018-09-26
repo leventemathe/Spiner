@@ -1,5 +1,5 @@
 //
-//  CarbonArrowVC.swift
+//  CarbonSpineCalculatorVC.swift
 //  Spiner
 //
 //  Created by Máthé Levente on 2018. 09. 15..
@@ -9,8 +9,8 @@
 import UIKit
 import SpineCalculator
 
-class CarbonArrowVC: UIViewController {
-    
+class CarbonSpineCalculatorVC: UIViewController, SpineCalculatorVC {
+
     var input: SpineInput!
     var calc: SpineCalculator!
     
@@ -42,6 +42,6 @@ class CarbonArrowVC: UIViewController {
     }
     
     private func getBowStats() -> String {
-        return "\(input.drawWeight)# @ \(input.drawLength)\""
+        return "\(input.drawWeight)# \(input.drawLength)\""
     }
 }
