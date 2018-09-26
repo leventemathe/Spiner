@@ -16,6 +16,10 @@ class CarbonSpineCalculatorVC: UIViewController, SpineCalculatorVC {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        mapModelToUI()
+    }
+    
+    private func mapModelToUI() {
         let spine = calc.calculate(input.drawWeight, drawLength: input.drawLength)
         let arrowVC = children.first! as! ArrowVC
         let spineWithExtra = calculateSpineWithExtra(spine)
@@ -39,9 +43,5 @@ class CarbonSpineCalculatorVC: UIViewController, SpineCalculatorVC {
         } else {
             return (String(resultSpine), "With lighter point")
         }
-    }
-    
-    private func getBowStats() -> String {
-        return "\(input.drawWeight)# \(input.drawLength)\""
     }
 }

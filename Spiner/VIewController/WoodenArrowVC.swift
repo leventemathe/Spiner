@@ -16,5 +16,15 @@ class WoodenArrowVC: UIViewController, SpineCalculatorVC {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        mapModelToUI()
+    }
+    
+    func mapModelToUI() {
+        let spine = (calc as! WoodenArrowSpineCalculator).calculateAsPundage(input.drawWeight, drawLength: input.drawLength)
+        let arrowVC = children.first! as! ArrowVC
+        arrowVC.setTitle("Wooden Arrow")
+        arrowVC.setSpine("\(Int(round(spine))) lbs")
+        arrowVC.setExtra("")
+        arrowVC.setStats(getBowStats())
     }
 }

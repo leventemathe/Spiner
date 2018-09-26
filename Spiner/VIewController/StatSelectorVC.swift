@@ -43,16 +43,17 @@ class StatSelectorVC: GradientVC {
         let arrowMaterial = mapArrowMaterialString()
         let spineInput = SpineInput(drawWeight: drawWeight, drawLength: drawLength, arrowMaterial: arrowMaterial)
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        var spineVC: SpineCalculatorVC
         switch arrowMaterial {
         case .carbon:
-            let arrowVC = storyboard.instantiateViewController(withIdentifier: "CarbonArrowVC") as! CarbonSpineCalculatorVC
-            arrowVC.input = spineInput
-            arrowVC.calc = SyntheticArrowSpineCalculator()
-            navigationController?.pushViewController(arrowVC, animated: true)
+            spineVC = storyboard.instantiateViewController(withIdentifier: "CarbonArrowVC") as! CarbonSpineCalculatorVC
+            spineVC.calc = SyntheticArrowSpineCalculator()
         case .wooden:
-            let arrowVC = storyboard.instantiateViewController(withIdentifier: "WoodenArrowVC") as! WoodenArrowVC
-            navigationController?.pushViewController(arrowVC, animated: true)
+            spineVC = storyboard.instantiateViewController(withIdentifier: "WoodenArrowVC") as! WoodenArrowVC
+            spineVC.calc = WoodenArrowSpineCalculator()
         }
+        spineVC.input = spineInput
+        navigationController?.pushViewController(spineVC as! UIViewController, animated: true)
     }
     
     private func mapArrowMaterialString() -> ArrowMaterial {
