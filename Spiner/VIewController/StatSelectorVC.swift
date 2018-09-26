@@ -36,7 +36,7 @@ class StatSelectorVC: GradientVC {
         }
     }
     
-    // TODO: Make sure only numbers can be typed in
+    // TODO: Make sure only 1 decimal point can be typed in and number is not too big
     @IBAction func calculateButtonPressed(_ sender: UIButton) {
         pushVCAccordingToUIState()
     }
