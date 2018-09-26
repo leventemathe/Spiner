@@ -71,7 +71,7 @@
                                             <segment title="Carbon"/>
                                         </segments>
                                     </segmentedControl>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Draw Weight (lbs)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fbb-Y0-6GX" customClass="SpinerTextField" customModule="Spiner" customModuleProvider="target">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Draw Weight (lbs @ 28 in)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fbb-Y0-6GX" customClass="SpinerTextField" customModule="Spiner" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="318" width="266" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -135,7 +135,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="IFG-5c-nIb">
-                                <rect key="frame" x="192.5" y="166.5" width="215.5" height="267"/>
+                                <rect key="frame" x="52.5" y="150.5" width="215.5" height="267"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Carbon Arrow" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Yl-P3-3JR">
                                         <rect key="frame" x="45.5" y="0.0" width="124" height="39"/>
