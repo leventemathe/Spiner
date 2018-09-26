@@ -10,7 +10,7 @@ import UIKit
 import SpineCalculator
 
 class StatSelectorVC: GradientVC {
-
+    
     @IBOutlet weak var materialSelectorControl: SpinerSegmentedControl!
     @IBOutlet weak var drawWeightTextField: SpinerTextField!
     @IBOutlet weak var drawLengthTextField: SpinerTextField!
@@ -38,9 +38,13 @@ class StatSelectorVC: GradientVC {
     
     // TODO: Make sure only numbers can be typed in
     @IBAction func calculateButtonPressed(_ sender: UIButton) {
+        pushVCAccordingToUIState()
+    }
+    
+    private func pushVCAccordingToUIState() {
         let drawWeight = Double(drawWeightTextField.text!)!
         let drawLength = Double(drawLengthTextField.text!)!
-        let arrowMaterial = mapArrowMaterialString()
+        let arrowMaterial = mapSegmentedControlToArrowMaterial()
         let spineInput = SpineInput(drawWeight: drawWeight, drawLength: drawLength, arrowMaterial: arrowMaterial)
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         var spineVC: SpineCalculatorVC
@@ -56,7 +60,7 @@ class StatSelectorVC: GradientVC {
         navigationController?.pushViewController(spineVC as! UIViewController, animated: true)
     }
     
-    private func mapArrowMaterialString() -> ArrowMaterial {
+    private func mapSegmentedControlToArrowMaterial() -> ArrowMaterial {
         if materialSelectorControl.selectedSegmentIndex == 0 {
             return .wooden
         }
