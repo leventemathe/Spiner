@@ -14,6 +14,8 @@ class CarbonSpineCalculatorVC: UIViewController, SpineCalculatorVC {
     var input: SpineInput!
     var calc: SpineCalculator!
     
+    var vm: CarbonSpineCalculatorVM! = CarbonSpineCalculatorVM()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         mapModelToUI()
@@ -22,26 +24,11 @@ class CarbonSpineCalculatorVC: UIViewController, SpineCalculatorVC {
     private func mapModelToUI() {
         let spine = calc.calculate(input.drawWeight, drawLength: input.drawLength)
         let arrowVC = children.first! as! ArrowVC
-        let spineWithExtra = calculateSpineWithExtra(spine)
+        let spineWithExtra = vm.calculateSpineWithExtra(spine)
         print("Spine: \(spine)")
         print("Spine with extra \(spineWithExtra)")
         arrowVC.setSpine(spineWithExtra.0)
         arrowVC.setExtra(spineWithExtra.1)
         arrowVC.setStats(getBowStats())
-    }
-    
-    private func calculateSpineWithExtra(_ spine: Double) -> (String, String) {
-        let spine: Int = Int(round(spine))
-        let remainder = spine % 100
-        var resultSpine = spine - remainder
-        
-        if remainder > 50 {
-            resultSpine += 100
-            return (String(resultSpine), "With heavier point or longer shaft")
-        } else if remainder == 0{
-            return (String(resultSpine), "")
-        } else {
-            return (String(resultSpine), "With lighter point")
-        }
     }
 }

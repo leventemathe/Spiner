@@ -24,6 +24,7 @@
 		D7CB26362139489F004D71BD /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7CB26352139489F004D71BD /* Extensions.swift */; };
 		D7CB263821394ED8004D71BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7CB263721394ED8004D71BD /* Assets.xcassets */; };
 		D7E4D821215BDB4C00B43E89 /* SpineCalculatorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E4D820215BDB4C00B43E89 /* SpineCalculatorVC.swift */; };
+		D7E4D824215BDE4200B43E89 /* CarbonSpineCalculatorVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E4D823215BDE4200B43E89 /* CarbonSpineCalculatorVM.swift */; };
 		D7F353AD2154FB3A00AFB4B8 /* SyntheticArrowSpineCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F353AC2154FB3A00AFB4B8 /* SyntheticArrowSpineCalculatorTests.swift */; };
 		D7F52FE0214D221A00B8974B /* WoodenArrowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F52FDF214D221A00B8974B /* WoodenArrowVC.swift */; };
 		D7F52FE2214D291F00B8974B /* ArrowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F52FE1214D291F00B8974B /* ArrowVC.swift */; };
@@ -99,6 +100,7 @@
 		D7CB26352139489F004D71BD /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		D7CB263721394ED8004D71BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D7E4D820215BDB4C00B43E89 /* SpineCalculatorVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpineCalculatorVC.swift; sourceTree = "<group>"; };
+		D7E4D823215BDE4200B43E89 /* CarbonSpineCalculatorVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarbonSpineCalculatorVM.swift; sourceTree = "<group>"; };
 		D7F353AC2154FB3A00AFB4B8 /* SyntheticArrowSpineCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyntheticArrowSpineCalculatorTests.swift; sourceTree = "<group>"; };
 		D7F52FDF214D221A00B8974B /* WoodenArrowVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WoodenArrowVC.swift; sourceTree = "<group>"; };
 		D7F52FE1214D291F00B8974B /* ArrowVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrowVC.swift; sourceTree = "<group>"; };
@@ -183,6 +185,14 @@
 			path = VIewController;
 			sourceTree = "<group>";
 		};
+		D7E4D822215BDE2000B43E89 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D7E4D823215BDE4200B43E89 /* CarbonSpineCalculatorVM.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		D7FA7B082136CCD400DD6EDC = {
 			isa = PBXGroup;
 			children = (
@@ -207,6 +217,7 @@
 			isa = PBXGroup;
 			children = (
 				D714842321395E9A00890A9F /* Model */,
+				D7E4D822215BDE2000B43E89 /* ViewModel */,
 				D7ACDCF5214D134C0044201D /* VIewController */,
 				D7FA7B282136CD1600DD6EDC /* View */,
 				D7FA7B272136CD0800DD6EDC /* Supporting Files */,
@@ -425,6 +436,7 @@
 				D714843421397B6A00890A9F /* SpinerTextField.swift in Sources */,
 				D7148432213979C800890A9F /* Theme.swift in Sources */,
 				D714842C2139783800890A9F /* Fonts.swift in Sources */,
+				D7E4D824215BDE4200B43E89 /* CarbonSpineCalculatorVM.swift in Sources */,
 				D7FA7B172136CCD400DD6EDC /* StatSelectorVC.swift in Sources */,
 				D7CB263421394549004D71BD /* Colors.swift in Sources */,
 				D714842721395EE000890A9F /* ArrowMaterial.swift in Sources */,
