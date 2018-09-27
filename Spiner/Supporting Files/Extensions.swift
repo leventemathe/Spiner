@@ -55,3 +55,13 @@ extension UIViewController {
         view.endEditing(true)
     }
 }
+
+extension String {
+    
+    var isDecmial: Bool {
+        let formatter = NumberFormatter()
+        formatter.allowsFloats = true
+        formatter.locale = Locale.current
+        return formatter.number(from: self) != nil
+    }
+}

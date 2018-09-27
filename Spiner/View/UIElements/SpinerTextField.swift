@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SpinerTextField: UITextField {
+class SpinerTextField: DecimalOnlyTextField {
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)

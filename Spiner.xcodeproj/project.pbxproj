@@ -25,6 +25,7 @@
 		D7CB263821394ED8004D71BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7CB263721394ED8004D71BD /* Assets.xcassets */; };
 		D7E4D821215BDB4C00B43E89 /* SpineCalculatorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E4D820215BDB4C00B43E89 /* SpineCalculatorVC.swift */; };
 		D7E4D824215BDE4200B43E89 /* CarbonSpineCalculatorVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E4D823215BDE4200B43E89 /* CarbonSpineCalculatorVM.swift */; };
+		D7E4D828215D51BC00B43E89 /* DecimalOnlyTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E4D827215D51BC00B43E89 /* DecimalOnlyTextField.swift */; };
 		D7F353AD2154FB3A00AFB4B8 /* SyntheticArrowSpineCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F353AC2154FB3A00AFB4B8 /* SyntheticArrowSpineCalculatorTests.swift */; };
 		D7F52FE0214D221A00B8974B /* WoodenArrowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F52FDF214D221A00B8974B /* WoodenArrowVC.swift */; };
 		D7F52FE2214D291F00B8974B /* ArrowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F52FE1214D291F00B8974B /* ArrowVC.swift */; };
@@ -101,6 +102,7 @@
 		D7CB263721394ED8004D71BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D7E4D820215BDB4C00B43E89 /* SpineCalculatorVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpineCalculatorVC.swift; sourceTree = "<group>"; };
 		D7E4D823215BDE4200B43E89 /* CarbonSpineCalculatorVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarbonSpineCalculatorVM.swift; sourceTree = "<group>"; };
+		D7E4D827215D51BC00B43E89 /* DecimalOnlyTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecimalOnlyTextField.swift; sourceTree = "<group>"; };
 		D7F353AC2154FB3A00AFB4B8 /* SyntheticArrowSpineCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyntheticArrowSpineCalculatorTests.swift; sourceTree = "<group>"; };
 		D7F52FDF214D221A00B8974B /* WoodenArrowVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WoodenArrowVC.swift; sourceTree = "<group>"; };
 		D7F52FE1214D291F00B8974B /* ArrowVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrowVC.swift; sourceTree = "<group>"; };
@@ -164,6 +166,7 @@
 			children = (
 				D7F52FEB214D5D4E00B8974B /* ThemeableView.swift */,
 				D71484292139773200890A9F /* SpinerSegmentedControl.swift */,
+				D7E4D827215D51BC00B43E89 /* DecimalOnlyTextField.swift */,
 				D714843321397B6A00890A9F /* SpinerTextField.swift */,
 				D7ACDCEF21491C3A0044201D /* SpinerButton.swift */,
 			);
@@ -450,6 +453,7 @@
 				D7ACDCF021491C3A0044201D /* SpinerButton.swift in Sources */,
 				D7ACDCF4214D133D0044201D /* CarbonSpineCalculatorVC.swift in Sources */,
 				D714842A2139773200890A9F /* SpinerSegmentedControl.swift in Sources */,
+				D7E4D828215D51BC00B43E89 /* DecimalOnlyTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
