@@ -11,4 +11,4 @@ The calculator brain (using the ATA and ASTM standards to calculate the arrow sp
 
 The rest of the app, so mainly the UI is in the main Spiner target.
 
-![Screenshots](https://github.com/leventemathe/Spiner/docs/img/screenshots.png "Logo Title Text 1")
+![Screenshots](https://github.com/leventemathe/Spiner/blob/master/docs/img/screenshots.png "Screenshots")
