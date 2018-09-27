@@ -9,6 +9,7 @@
 import Foundation
 
 enum ArrowMaterial {
+    
     case wooden
     case carbon
 }
