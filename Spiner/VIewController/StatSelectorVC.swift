@@ -42,8 +42,8 @@ class StatSelectorVC: GradientVC {
     }
     
     private func pushVCAccordingToUIState() {
-        let drawWeight = Double(drawWeightTextField.text!)!
-        let drawLength = Double(drawLengthTextField.text!)!
+        let drawWeight = Double(drawWeightTextField.text!)!.rounded(2)
+        let drawLength = Double(drawLengthTextField.text!)!.rounded(2)
         let arrowMaterial = mapSegmentedControlToArrowMaterial()
         let spineInput = SpineInput(drawWeight: drawWeight, drawLength: drawLength, arrowMaterial: arrowMaterial)
         let storyboard = UIStoryboard(name: "Main", bundle: nil)

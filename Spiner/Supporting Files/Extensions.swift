@@ -65,3 +65,18 @@ extension String {
         return formatter.number(from: self) != nil
     }
 }
+
+extension Double {
+
+    func rounded(_ decimals: UInt) -> Double {
+        var decimals = decimals
+        if decimals > 10 {
+            decimals = 10
+        }
+        let formatter = NumberFormatter()
+        formatter.numberStyle = NumberFormatter.Style.decimal
+        formatter.roundingMode = NumberFormatter.RoundingMode.halfUp
+        formatter.maximumFractionDigits = Int(decimals)
+        return Double(formatter.string(from: NSNumber(floatLiteral: self))!)!
+    }
+}
